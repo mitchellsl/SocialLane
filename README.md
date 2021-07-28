@@ -2,7 +2,9 @@
 
 SocialLane Custom Template
 
-// Blocks
+Branch off main when editting or adding new functionalities in below noted blocks.
+
+Blocks
 
 1. Block Repeater
 2. Blog
@@ -26,4 +28,3 @@ SocialLane Custom Template
 20. Services
 21. Social Share
 22. Vacancy
-
