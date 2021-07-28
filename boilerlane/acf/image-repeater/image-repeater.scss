@@ -1,0 +1,152 @@
+section.block-repeater, section.block-repeater.is-admin {
+    position:relative;
+    .hide{
+        display:none;
+    }
+    .corner-images{
+        position:absolute;
+        top:0;
+        left:0;
+        height:100%;
+        width:100%;
+    }
+    .row {
+        .container {
+            .row {
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                display:flex;
+
+                i {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 50px;
+                    margin-left:10px;
+                    margin-bottom: 0.5rem;
+                }
+
+                &:nth-child(2) {
+                    display: flex;
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 0px;
+                    margin-left: 0px;
+
+                    .col {
+                        flex: 0 0 24%;
+                        max-width: 24%;
+                        margin: 0.5%;
+                        -webkit-box-flex: 0;
+                        -ms-flex: 0 0 24%;
+                        margin: 0.5%;
+                        max-height: 300px;
+                        position: relative;
+                        overflow: hidden;
+                        height: calc(25vw - 40px);
+                        border: 8px solid #FFF;
+                        box-shadow: 0 0 20px -10px #000;
+                        &:not:first-child:not:last-child {
+                            margin: 0 15px;
+                        }
+                        @media screen and (max-width:767px) {
+                            height: 160px;
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                        }
+
+                            img {
+                                position: absolute;
+                                object-fit: cover;
+                                object-position:center;
+                                height: 100% !important;
+                                width:100%;
+                                right: 0;
+                                top: 0;
+                            }
+
+                        @media screen and (max-width:767px) {
+                            flex: 0 0 49%;
+                            max-width: 49%;
+
+                            &:nth-child(n+5) {
+                                display: none;
+                            }
+                        }
+
+                    }
+                }
+                .col-hashtag{
+                    .heading{
+                        position:relative;
+                        .hashtag-icon-1{
+                            &:before {
+                                content: "";
+                                height: 35px;
+                                width: 5px;
+                                display: block;
+                                background: #b1729f;
+                                position: absolute;
+                                transform: rotate(7deg) skew(5deg, 30deg);
+                                left: -18px;
+                            }
+                            &:after {
+                                content: "";
+                                height: 35px;
+                                width: 5px;
+                                display: block;
+                                background: #b1729f;
+                                position: absolute;
+                                transform: rotate(7deg) skew(-4deg, 30deg);
+                                left: -4px;
+                            }
+                        }
+                        .hashtag-icon-2{
+                            &:before {
+                                content: "";
+                                height: 35px;
+                                width: 5px;
+                                display: block;
+                                background: #b1729f;
+                                position: absolute;
+                                -webkit-transform: rotate(47deg) skew(5deg, 30deg);
+                                transform: rotate(104deg) skew(5deg, 30deg);
+                                left: -10px;
+                                top: -6px;
+                            }
+                            &:after {
+                                content: "";
+                                height: 35px;
+                                width: 5px;
+                                display: block;
+                                background: #b1729f;
+                                position: absolute;
+                                -webkit-transform: rotate(47deg) skew(5deg, 30deg);
+                                transform: rotate(104deg) skew(10deg, 310deg);
+                                left: -10px;
+                                top: 6px;
+                            }
+                        }
+                    }
+                 }
+            }
+        }
+    }
+
+    &.is-admin {
+        .row {
+            .container {
+                .row {
+                    &:nth-child(2) {
+                        justify-content: center;
+                        align-items: Center;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.image-polaroid{
+    height: 100%;
+    width: 100%;
+    width:100%;
+    transform: rotate(-1deg);
+    z-index: 0;
+    position:relative;
+    top:0;
+    left:0;
+    @media screen and (max-width:767px){
+        height:350px;
+    }
+    
+    &:before{
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        background: #000;
+        border: 5px solid #FFF;
+        -webkit-box-shadow: 0 0 10px #000;
+        box-shadow: 0 0 10px #000;
+        -webkit-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+    &:after{
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+        background: #000;
+        border: 5px solid #FFF;
+        -webkit-box-shadow: 0 0 0px #000;
+        box-shadow: 0 0 0px #000;
+        transform: rotate( -1deg);
+  }
+  img.polaroid{
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    border: 5px solid #FFF;
+    -webkit-box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px #000;
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    -webkit-transform: rotate(1deg);
+    transform: rotate(0.5deg);
+  }
+} 

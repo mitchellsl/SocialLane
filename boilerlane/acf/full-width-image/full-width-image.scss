@@ -1,0 +1,17 @@
+section.full-width-image, section.full-width-image.is-admin{
+    position:relative;
+    height: 400px;
+    img{
+        position: absolute;
+            object-fit: cover;
+            object-position:center;
+            height: 100% !important;
+            width:100%;
+            right: 0;
+            top: 0;
+            z-index: 0;
+                @media screen and (max-width:767px){
+                    width:100%;
+                }
+    }
+}

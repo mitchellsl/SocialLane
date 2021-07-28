@@ -1,0 +1,40 @@
+section.info-blocks, section.info-blocks.is-admin{
+    position:relative;
+    .content-row{
+        .container{
+            .row{
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+                z-index:1;
+                position:relative;
+                flex: 0 0 100%;
+                max-width:100%;
+                margin: 0 auto;
+                @media screen and (max-width:767px){
+                    flex: 0 0 100%;
+                    max-width:100%;
+                    align-items: flex-start;
+                    gap: 15px;
+                }
+            }
+            .content {
+                display: flex;
+                flex: 0 0 31.3%;
+                max-width: 31.3%;
+                flex-wrap: wrap;
+                flex-direction: column;
+                background: #efefef;
+                padding: 25px 25px;
+                justify-content: center;
+                border-radius: 6px;
+                @media screen and (max-width: 767px) {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    align-items: flex-start;
+                    row-gap: 15px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+section.services, section.services.is-admin{
+    position:relative;
+    .container{
+        .row{
+            display:flex;
+            justify-content:center;
+            // align-items:center;
+            z-index:1;
+            position:relative;
+            flex: 0 0 100%;
+            max-width:100%;
+            margin: 0 auto;
+            @media screen and (max-width:767px){
+                flex: 0 0 100%;
+                max-width:100%;
+            }
+            .card--outer {
+                display: flex;
+                flex: 0 0 80%;
+                max-width: 80%;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                margin-top: -150px;
+                @media only screen and (max-width: 1024px) {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+                .card--wrapper {
+                    display: flex;
+                    flex: 0 0 50%;
+                    max-width: 49%;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 15px;
+                    position: relative;
+                    @media only screen and (max-width: 1024px) {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                    .card--image {
+                        position: relative;
+                        img {
+                        position: relative;
+                        border-radius: 30px;
+                        filter:brightness(0.75);
+                        object-fit: cover;
+                        min-height: 550px;
+                        box-shadow: 10px 10px 59px -9px rgba(0,0,0,0.15);
+                        &::after {
+                            filter:brightness(0.5);
+                            }
+                        }
+                    }
+                    .card-content--wrapper {
+                        position: absolute;
+                        bottom: 0;
+                        padding: 45px 65px;
+                        @media only screen and (max-width: 767px) {
+                            padding: 45px 15px;
+                        }
+                    }
+                    .card--heading {
+                        color: white;
+                        font-family:"Muli", sans-serif;
+                        font-size: 24px;
+                        font-weight: 600;
+                    }
+                    .card--content {
+                        color: white;
+                    }
+                }
+            }
+        }
+    } 
+}

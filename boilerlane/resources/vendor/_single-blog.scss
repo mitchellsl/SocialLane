@@ -1,0 +1,82 @@
+body.single {
+    .corner-images > .backdrop{
+        opacity:0.7;
+    }
+    #main {
+        padding: 15px;
+    }
+    #content {
+        display: flex;
+        flex-wrap:wrap;
+        .post-header{
+            position: relative;
+            width: 100%;
+            min-height: 400px;
+            height: 100%;
+            display: block;
+            img {
+                object-fit:cover;
+                object-position:center;
+                height: 400px;
+                width: 100%;
+                max-width: 100%;
+                position: absolute;
+                }
+        } 
+        
+            h1{
+                z-index: 10;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                max-width: 1300px;
+                width: 100%;
+                transform: translate(-50%, -50%);
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            .single_main_wrapper{
+                width: 100%;
+                margin: 0 auto;
+                position: relative;
+                padding-top: 75px;
+                padding-bottom: 75px;
+                .content-wrapper{
+                    max-width:1300px;
+                    width:100%;
+                    margin: 0 auto;
+                    display: flex;
+                    #primary{
+                        flex:0 0 70%;
+                        max-width:70%;
+                        @media (max-width: 767px) {
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                        }
+                    }
+                    sidebar{
+                        display:block; 
+                        position:relative;
+                        .widget_custom_html{
+                            flex: 0 0 100%;
+                            margin: 10px 0px;
+                            .custom-html-widget {
+                                display: inline-flex;
+                                height: auto;
+                                width: 100%;
+                                justify-content: center;
+                                align-items: center;
+                                .button {
+                                    height: auto;
+                                    width: 100% !important;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }

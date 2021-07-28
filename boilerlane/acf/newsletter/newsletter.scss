@@ -1,0 +1,77 @@
+section.newsletter, section.newsletter.is-admin{
+    position:relative;
+    .corner-images{
+        z-index:0;
+    }
+    .row{
+        z-index:1;
+        .container{
+            .row{
+                padding-left: 15px;
+                padding-right: 15px;
+                position:relative;
+                display:flex;
+                .col-6{
+                    flex:0 0 50%;
+                    max-width:50%;
+                    &.formulier{
+                        position:relative;
+                    }
+                    &.image{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            max-width: 520px;
+                            width: 100%;
+                        }
+                        @media screen and (max-width:767px){
+                            display:none;
+                        }
+                    }
+
+                    @media screen and (max-width:767px){
+                        &:nth-child(1){
+                            flex: 0 0 100%;
+                            max-width:100%;
+                            padding: 0 15px;
+                        }
+                        &:nth-child(2){
+                            display:none;
+                        }
+                    }
+                }
+                .col-12{
+                    flex:0 0 100%;
+                    max-width:100%;
+                    &.formulier{
+                        position:relative;
+                    }
+                    &.image{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            max-width: 520px;
+                            width: 100%;
+                        }
+                        @media screen and (max-width:767px){
+                            display:none;
+                        }
+                    }
+
+                    @media screen and (max-width:767px){
+                        &:nth-child(1){
+                            flex: 0 0 100%;
+                            max-width:100%;
+                            padding: 0 15px;
+                        }
+                        &:nth-child(2){
+                            display:none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

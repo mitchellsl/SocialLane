@@ -1,0 +1,86 @@
+section.vacancy, section.vacancy.is-admin{
+    position:relative;
+    .content-row{
+        .container{
+            .row{
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                z-index:1;
+                position:relative;
+                flex: 0 0 100%;
+                max-width:100%;
+                margin: 0 auto;
+                @media screen and (max-width:767px){
+                    flex: 0 0 100%;
+                    max-width:100%;
+                }
+                    .vacancy--outer {
+                        display: flex;
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                        flex-wrap: wrap;
+                        flex-direction: row;
+                        justify-content: center;
+                        gap: 15px;
+                        // align-items: center;
+                    .vacancy-content--wrapper {
+                        display: flex;
+                        flex: 0 0 80%;
+                        max-width: 80%;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: center;
+                        .vacancy--heading {
+                            h2 {
+                                color: #133B7F;
+                                margin-bottom: 25px;
+                            }
+                        }
+                        .vacancy--content {
+                            text-align: center;
+                            margin-bottom: 25px;
+                        }
+                    }
+                    .vacancy-wrapper--block {
+                        display: flex;
+                        flex: 0 0 30%;
+                        max-width: 30%;
+                        flex-direction: column;
+                        justify-content: center;
+                        background-color: #fff;
+                        border-radius: 30px;
+                        box-shadow: 10px 10px 59px -9px rgba(0,0,0,0.15);
+                        padding: 5%;
+                        margin-bottom: 2.5%;
+                        @media only screen and (max-width: 767px) {
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                            flex-wrap: wrap;
+                        }
+                        .vacancy--heading {
+                            color: #133B7F;
+                            font-weight: 600;
+                            font-size: 1.2rem;
+                            font-family: "Muli", sans-serif;
+                            font-weight: 600;
+                        }
+                        .vacancy--subline {
+                            p {
+                                color: #c2c2c2;
+                            }
+                        }
+                        .vacancy--content {
+                            p {
+                                margin: 15px 0;
+                            }
+                        }
+                        .vacancy--button {
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}

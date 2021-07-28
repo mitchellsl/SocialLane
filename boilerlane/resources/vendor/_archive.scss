@@ -1,0 +1,183 @@
+body.archive{
+    .corner-images > .backdrop{
+        opacity:0.7;
+    }
+    #page{
+        #content{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 100%;
+            .page-header {
+                width: 100%;
+                position: relative;
+                min-height: 400px;
+                .backdrop {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+            .single_main_wrapper{
+                width: 100%;
+                margin: 0 auto;
+                position: relative;
+                padding-top: 75px;
+                padding-bottom: 75px;
+                .content-wrapper{
+                    max-width:1300px;
+                    width:100%;
+                    margin: 0 auto;
+                    display: flex;
+                    .col-8{
+                        position:relative;
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: row;
+                        flex:0 0 66.66%;
+                        .col-blog{
+                            display:flex;
+                            flex-direction:column;
+                            flex: 0 0 31.33%;
+                            max-width:31.33%;
+                            margin: 1%;
+                            padding-bottom: 10px;
+                            position: relative;
+                            justify-content:flex-start;
+                            max-height: 400px;
+                            background-image: url(/wp-content/uploads/2021/04/papiertjes-2.jpg);
+                
+                            @media screen and (max-width:767px){
+                                flex: 0 0 100%;
+                                max-width:100%;
+                                margin: 0%;
+                            }
+                            .blog-card--thumbnail{
+                                position: relative;
+                                height: 150px;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                img {
+                                    top: 0;
+                                    left: 0;
+                                    position: absolute;
+                                    height: 150px;
+                                    width: 100%;
+                                    object-fit: cover;
+                                    object-position: center;
+                                }
+                            }
+                            .blog-card--date {
+                            position: absolute;
+                            top:120px;
+                            left:20px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            width: 55px;
+                            height: 55px;
+                            background: orange;
+                            border-radius: 10px;
+                            .day {
+                                color: #FFF;
+                                line-height: 0.7;
+                            }
+                            .month {
+                                color: #FFF;
+                            }
+                            &.honden{
+                                background:red;
+                            }
+                        }
+                            .blog-card--title{
+                                color: black;
+                                font-weight: bold;
+                                padding: 10px 20px;
+                                margin-top: 30px;
+                                min-height: 65px;
+                            }
+                            .blog-card--content{
+                                padding: 10px 20px 70px 20px;
+                                p{
+                                    color: black;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    display: -webkit-box;
+                                    -webkit-line-clamp: 2; /* number of lines to show */
+                                    -webkit-box-orient: vertical;
+                                }
+                            }
+                            
+                            .blog-card--button-wrapper {
+                                margin-top: 20px;
+                                padding: 10px 20px;
+                                position: absolute;
+                                bottom: 20px;
+                            }
+                        }
+                    }
+                    .col-3{
+                        position:relative;
+                        // display: flex;
+                        // flex-wrap: wrap;
+                        flex:0 0 25%;
+                        section {
+                            width: 100%;
+                            height: auto;
+                            display: inline-flex;
+                            flex-direction: column;
+                            h2 {
+                                color: #BDC74B;
+                            }
+                            ul {
+                                padding: 0;
+                                list-style-type: none;
+                                li{
+                                    a {
+                                        color: #504741;
+                                    }
+                                }
+                            }
+                            &.gform_widget {
+                                background: #FFF;
+                                border: 1px solid #707070;
+                                padding: 30px 20px;
+                            }
+                            &.widget_categories{
+                                background:#FFF;
+                                border:1px solid #707070;
+                                padding:30px 20px;
+                            }
+                        }
+                        .widget_custom_html{
+                            flex: 0 0 100%;
+                            margin: 10px 0px;
+                            .custom-html-widget {
+                                display: inline-flex;
+                                height: auto;
+                                width: 100%;
+                                justify-content: center;
+                                align-items: center;
+                                .button {
+                                    height: auto;
+                                    width: 100% !important;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

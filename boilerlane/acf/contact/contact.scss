@@ -1,0 +1,64 @@
+section.contact, section.contact.is-admin{
+  position:relative;
+  z-index: 101;
+  @media screen and (max-width:767px){
+     padding-top: 50px !important;
+     padding-bottom: 50px !important;
+  }
+  .container{
+    .row.contact-holder{
+      display:flex;
+      .contact-details{
+              padding-right: 50px;
+              @media screen and (max-width:767px){
+                 padding-right: 0px;
+              }
+          .inner{
+            h2{
+              font-size:calc(25.323119777151px + (30 - 25.323119777151) * ((200vw - 300px) / (2300 - 300)));
+              line-height:calc(25.323119777151px + (30 - 25.323119777151) * ((200vw - 300px) / (2300 - 300)));
+              font-weight:700;
+              .last{
+                color:inherit !important;
+            }
+          }
+          ul{
+            list-style:none;
+            margin-left:0;
+            padding-left:0;
+            li{
+              margin-bottom: 15px;
+              a{
+                color:#000;
+              }
+            }
+          }
+        }
+        @media screen and (max-width:767px){
+           flex:0 0 100%;
+           padding-left:15px;
+           padding-right:15px;
+        }
+      }
+      .contact-form{
+        @media screen and (max-width:767px){
+           flex:0 0 100%;
+           padding-left:15px;
+           padding-right:15px;
+        }
+      }
+    }
+  }
+  + .container-fluid .row{
+    position:relative;
+    display:flex;
+    a{
+      width:100%;
+      img {
+        height: 100%;
+        width:100%;
+      }
+    }
+  }
+  
+}

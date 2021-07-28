@@ -1,0 +1,132 @@
+body.home h2, body.home h3{
+    color: #B1729F !important;
+}
+
+body.home section.block-repeater .row .container .row i {
+    color: #B1729F !important;
+}
+body{
+    &.honden{
+        h2, h3, h4, h5, h6, .block-repeater i{
+            color:#714718 !important;
+        }
+        .button, section .button, section .gform_button{
+            background:#714718 !important;
+            color:white
+        }
+        .slick-dots li button:before{
+            color: #714718 !important;
+        }
+        section.block-repeater .row .container .row i{
+            color: #714718 !important;
+        }
+        .socials a:hover{
+            background:#714718 !important;
+        }
+    }
+    &.katten{
+        h2, h3, h4, h5, h6, .block-repeater i{
+            color:#D661A8 !important;
+        }
+        .button, section .button, section .gform_button{
+            background:#D661A8 !important;
+            color:white !important;
+        }
+        .slick-dots li button:before{
+            color: #D661A8 !important;
+        }
+        section.block-repeater .row .container .row i{
+            color: #D661A8 !important;
+        }
+        .socials a:hover{
+            background:#714718 !important;
+        }
+    }
+    &.vogels{
+        h2, h3, h4, h5, h6, .block-repeater i{
+            color:#A4CE46 !important;
+        }
+        .button, section .button, section .gform_button{
+            background:#A4CE46 !important;
+            color:white !important;
+        }
+        .slick-dots li button:before{
+            color: #A4CE46 !important;
+        }
+        section.block-repeater .row .container .row i{
+            color: #A4CE46 !important;
+        }
+        .socials a:hover{
+            background:#714718 !important;
+        }
+    }
+    &.reptielen{
+        h2, h3, h4, h5, h6, .block-repeater i{
+            color:#4CC2C5 !important;
+        }
+        .button, section .button, section .gform_button{
+            background:#4CC2C5 !important;
+            color:white !important;
+        }
+        .slick-dots li button:before{
+            color: #4CC2C5 !important;
+        }
+        section.block-repeater .row .container .row i{
+            color: #4CC2C5 !important;
+        }
+        .socials a:hover{
+            background:#714718 !important;
+        }
+    }
+    &.knaagdieren{
+        h2, h3, h4, h5, h6, .block-repeater i{
+            color:#FBAA21 !important;
+        }
+        .button, section .button, section .gform_button{
+            background:#FBAA21 !important;
+            color:white !important;
+        }
+        .slick-dots li button:before{
+            color: #FBAA21 !important;
+        }
+        section.block-repeater .row .container .row i{
+            color: #FBAA21 !important;
+        }
+    }
+    &.vissen{
+        h2, h3, h4, h5, h6, .block-repeater i{
+            color:#317FC2 !important;
+        }
+        .button, section .button, section .gform_button{
+            background:#317FC2 !important;
+            color:white !important;
+        }
+        .slick-dots li button:before{
+            color: #317FC2 !important;
+        }
+        section.block-repeater .row .container .row i{
+            color: #317FC2 !important;
+        }
+        .socials a:hover{
+            background:#714718 !important;
+        }
+    }
+    &.dierenkliniek{
+        h2, h3, h4, h5, h6, .block-repeater i{
+            color:#0C4F9A !important;
+        }
+        .button, section .button, section .gform_button{
+            background:#0C4F9A !important;
+            color:white !important;
+        }
+        .slick-dots li button:before{
+            color: #0C4F9A !important;
+        }
+        section.block-repeater .row .container .row i{
+            color: #0C4F9A !important;
+        }
+        .socials a:hover{
+            background:#714718 !important;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+@import 'vendor/variables';
+// Breakpoints
+$grid-breakpoints: (
+xs: 375px,
+sm: 480px,
+md: 768px,
+lg: 1024px,
+xl: 1280px,
+ul: 1440px
+);
+$container-max-widths: ( 
+lg: 1140px,
+xl: 1140px,
+ul: 1300px
+);
+
+h1, h2, h3, h4, h5, h6,p{
+    hyphens: auto;
+}
+img{max-width:100%;}
+
+$white : #FFF;
+$black : #000;
+$lightergray : #E3E1E0;
+$lightgrey : #707070;
+$darkbrown : #504741;
+$green : #A4CE46;
+$red : #D90017;
+$skyblue : #67A69A;
+$blue : #0C4F9A;
+$purple : #B1729F;
+
+//Wereld kleuren
+$honden : #714718;
+$katten : #D661A8;
+$vogels : #A4CE46;
+$reptielen : #4CC2C5;
+$knaagdieren : #FBAA21;
+$vissen : #317FC2;
+$dierenkliniek : #0C4F9A;
+
+
+
+// Packages
+@import 'bootstrap/bootstrap.scss';
+// @import "fancybox/fancybox.css";
+
+.lb-outerContainer {
+    top: 100px;
+}
+// @font-face {
+//     font-family: JungleFever;
+//     src: url(JungleFever.woff);
+// }
+//Vendor
+@import 'vendor/advanced';
+@import 'vendor/font';
+@import 'vendor/button';
+@import 'vendor/header';
+@import 'vendor/navigatie';
+@import 'vendor/images';
+@import 'vendor/offset';
+@import 'vendor/gravityforms';
+@import 'vendor/footer';
+@import 'vendor/blog';
+@import 'vendor/single-blog';
+@import 'vendor/archive';
+@import 'vendor/sidebar';
+@import 'vendor/background';
+@import 'vendor/animations';
+ 

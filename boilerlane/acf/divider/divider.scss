@@ -1,0 +1,231 @@
+$margin: 20px;
+$aspect-width: 48;
+$aspect-height: 6;
+$constant: ($margin * $aspect-width) / ($aspect-height * 3);
+
+section.divider.is-admin {
+    height:100px;
+    margin-bottom: 100px;
+    div{
+        svg{
+            stroke: rgb(119, 119, 119);
+        }
+    }
+}   
+section.divider{
+    z-index:110;
+   
+        div{
+            svg{
+                height:75px;
+                @media screen and (max-width:767px){
+                    height: 25px !important;
+                }
+        }
+    }
+}
+
+section.divider,
+section.divider.is-admin {
+    position:relative;
+   
+    //Waves
+    .custom-shape-divider-top-1623941915 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .custom-shape-divider-top-1623941915 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+    }
+    
+    //Waves Opacity
+    .custom-shape-divider-top-1623923005 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .custom-shape-divider-top-1623923005 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 56px;
+    }
+    
+    
+    //Curve
+    .custom-shape-divider-top-1623923113 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .custom-shape-divider-top-1623923113 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 56px;
+    }
+  
+    //Triangle
+    .custom-shape-divider-top-1623923192 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .custom-shape-divider-top-1623923192 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 56px;
+    }
+ 
+    //Triangle Asymmatrical
+    .custom-shape-divider-top-1623923241 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .custom-shape-divider-top-1623923241 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 56px;
+    }
+ 
+    //Tilt
+    .custom-shape-divider-top-1623941288 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .custom-shape-divider-top-1623941288 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 56px;
+    }
+
+    //Arrow
+    .custom-shape-divider-top-1623941345 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .custom-shape-divider-top-1623941345 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+    }
+ 
+    //Book
+    .custom-shape-divider-top-1623941414 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .custom-shape-divider-top-1623941414 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+    }
+  
+    //Book Inverted
+    .custom-shape-divider-top-1623941451 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .custom-shape-divider-top-1623941451 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+    }
+ 
+
+
+
+
+    .image-left{
+        position:absolute;
+        left:0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: calc( (1 / 5 * (100% - #{$margin}) ) + #{$constant} );
+        height: auto;
+        z-index:101;
+        @media screen and (max-width:767px){
+            max-width: 250px;
+            height:auto;
+        }
+    }
+    .image-full{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: auto;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: center;
+        object-position: center;
+        z-index: 100;
+    }
+    .image-right{
+        position:absolute;
+        right:0;    
+        top: 50%;
+        transform: translateY(-50%);
+        width: calc( (1 / 5 * (100% - #{$margin}) ) + #{$constant} );
+        height: auto;
+        z-index:101;
+        @media screen and (max-width:767px){
+            max-width:175px;
+            height:auto;
+        }
+    }
+}
+
+section.divider.is-admin{
+    position:relative;
+}

@@ -1,0 +1,131 @@
+section.blog{
+    .blog-card--date{
+        &.honden{
+            background: $honden !important;
+        }
+         &.katten{
+            background: $katten !important;
+        }
+        &.vogels{
+            background: $vogels !important;
+        }
+        &.reptielen{
+            background: $reptielen !important;
+        }
+        &.knaagdieren{
+            background: $knaagdieren !important;
+        }
+        &.vissen{
+            background: $vissen !important;
+        }
+        &.dierenkliniek{
+            background: $dierenkliniek !important;
+        }
+    }
+}
+
+
+body{
+    &.blog{
+       
+        .site-main{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            .col-blog{
+                display:flex;
+                flex-direction:column;
+                flex: 0 0 31.33%;
+                max-width:31.33%;
+                max-height:400px;
+                margin: 1%;
+                padding-bottom: 10px;
+                position: relative;
+                justify-content:flex-start;
+                background-color:#36485021;
+                
+                animation: fadeIn linear 0.4s;
+                -webkit-animation: fadeIn linear 0.4s;
+                -moz-animation: fadeIn linear 0.4s;
+                -o-animation: fadeIn linear 0.4s;
+                -ms-animation: fadeIn linear 0.4s;
+                
+                @keyframes fadeIn {
+                    0% {opacity:0;}
+                    100% {opacity:1;}
+                  }
+                  
+                @media screen and (max-width:767px){
+                    flex: 0 0 100%;
+                    max-width:100%;
+                    margin: 0%;
+                }
+                .blog-card--thumbnail{
+                    position: relative;
+                    height: 150px;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    img {
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+                        height: 150px;
+                        width: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+                .blog-card--date {
+                  position: absolute;
+                  top:120px;
+                  left:20px;
+                  display: flex;
+                  flex-wrap: wrap;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  width: 55px;
+                  height: 55px;
+                  background: orange;
+                  border-radius: 10px;
+                  .day {
+                      color: #FFF;
+                      line-height: 0.7;
+                  }
+                  .month {
+                      color: #FFF;
+                  }
+                  &.honden{
+                    background:red;
+                  }
+              }
+                .blog-card--title{
+                    color: black;
+                    font-weight: bold;
+                    padding: 10px 20px;
+                    margin-top: 30px;
+                    min-height: 65px;
+                }
+                .blog-card--content{
+                    padding: 10px 20px 70px 20px;
+                    p{
+                        color: black;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2; /* number of lines to show */
+                        -webkit-box-orient: vertical;
+                    }
+                }
+                
+                .blog-card--button-wrapper {
+                    margin-top: 20px;
+                    padding: 10px 20px;
+                    position: absolute;
+                    bottom: 20px;
+                }
+            }
+        }
+    }
+}

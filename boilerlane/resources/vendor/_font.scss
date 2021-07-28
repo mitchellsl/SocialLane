@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+@font-face {
+  font-family: "Gilroy", sans-serif;
+  src: url("../inc/fonts/gilroy.woff") format('woff'); }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+  font-family: 'Inter', sans-serif !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family:"Gilroy", sans-serif;
+}
+
+h1{
+  font-size: $h1-font-size;
+  line-height: $h1-line-height;
+  color:$white;
+}
+h2{
+  font-size: $h2-font-size;
+  line-height: $h2-line-height;
+}
+h3{
+  font-size: $h3-font-size;
+}

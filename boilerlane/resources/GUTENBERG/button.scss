@@ -1,0 +1,21 @@
+section{
+    button, .button, .gform_button{
+        color:#FFF !important;
+        background: #464646 !important;
+        padding:calc(3px + 5px) calc(5px * 2 + 15px) !important;
+        border-radius:5px;
+        text-transform: uppercase !important;
+        transition: all 0.4s ease-in-out !important;
+        text-decoration:none;
+        &:hover{
+            color:#FFF;
+            background: #1a1a1a;
+            text-decoration:none;
+        }
+    }
+    
+    .gform_button{
+        border: 0 !important;
+        width: calc(100% - 15px) !important;
+    }
+}

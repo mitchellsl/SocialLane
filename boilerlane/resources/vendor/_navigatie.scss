@@ -1,0 +1,182 @@
+header#masthead {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.header-navigation{
+    z-index: 999;
+    position: relative;
+  
+  }
+  .topbar{
+    background:$black;
+    z-index: 999;
+    position: relative;
+    .top-main-navigation{
+      display:flex;
+      padding-top: 5px;
+      padding-bottom: 5px;
+  
+      .container{
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        .button{
+            padding: 4px 10px !important;
+            font-size:15px;
+        }
+        .socials{
+          display: flex;
+          flex-direction: row;
+          a{
+            background:$white;
+            border-radius:300px;
+            width:22px;
+            height:22px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color:$black;
+            text-decoration:none;
+            margin-right:6px;
+            transition: all 0.4s ease-in-out;
+            i{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+              &:before{
+                font-size: 10px;
+              }
+              .hide{
+                display:none;
+              }
+            }
+            &:hover{
+              background:$white;
+            }
+          }
+        }
+        .sep{
+          color:$black;
+          font-weight:600;
+        }
+        .menu-top-container{
+          color:$white;
+          font-weight:600;
+          ul{
+            margin:0;
+            padding:0;
+            li{
+              list-style-type:none;
+              margin-left:10px;
+              margin-right:10px;
+              a{
+                color:$white;
+                text-decoration:none;
+                font-weight:600;
+                border-left: 1px solid #FFF;
+                border-right: 1px solid #FFF;
+                padding-left: 10px;
+                padding-right: 10px; 
+              }
+            }
+          }
+        }
+        .wpml-ls-statics-shortcode_actions.wpml-ls.wpml-ls-legacy-dropdown-click.js-wpml-ls-legacy-dropdown-click {
+            width: 65px;
+        }
+      }
+    }
+  }
+  
+  .site-header .site-header{
+    z-index: 999;
+    position: relative;
+    background: #e3e1e0;
+    // padding-top: 15px;
+    // padding-bottom: 55px;
+    // @media screen and (max-width:767px){
+    //   padding-top: 15px;
+    //   padding-bottom: 55px;
+    //     }
+    .row{
+      .container{
+        .row{
+          margin:0;
+          position:relative;
+          .site-branding{
+            position: relative;
+
+            width: 154px;
+            transition: all 0.4s ease-in-out;
+            @include media-breakpoint-down(md){
+              width: 100px !important;
+            }
+          }
+          #site-navigation{
+            display:flex;
+            flex-direction:row;
+            justify-content:flex-end;
+            position: absolute;
+            right: 0;
+            top: 0px;
+            .menu-main-container{
+              #primary-menu{
+                // display:flex;
+                // flex-direction:row;
+                // justify-content:flex-end;
+                // align-items:center;
+                padding:10px 0px;
+                transition: all 0.4s ease-in-out;
+                li{
+                  
+                  a{
+                    color:$black;
+                    text-decoration:none;
+                    font-weight:600;
+                  }
+                }
+              }
+            }
+            .btn{
+              display: block;
+              text-decoration: none;
+              color:$white;
+              
+            }
+            &.toggled{
+              .menu-main-container{
+                display: block;
+                position: absolute;
+                top: 49px;
+                left: 0;
+                width: 100%;
+                background: #FFFFFF;
+                z-index: -1;
+                padding-top: 80px;
+                padding-bottom: 20px;
+                box-shadow: 0 6px 22px -13px #000;
+                ul{
+                  li{
+                    line-height:35px;
+                    a{
+                      text-align:center;
+                    }
+                  }
+                }
+              }
+            }
+  
+            .menu-toggle{
+              order:2;
+              background:transparent;
+              border:0px;
+            }
+          }
+        }
+      }
+    }
+  
+  }
+  
